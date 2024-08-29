@@ -2,13 +2,11 @@ import React, { useEffect, useState, useContext } from 'react';
 import { Table, Button, notification } from 'antd';
 import axios from 'axios';
 import { CompareContext } from '../context/CompareContext';
-import { useNavigate } from 'react-router-dom';
 
 const ProductDetails = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const { compareProducts, setCompareProducts } = useContext(CompareContext);
-  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get('https://dummyjson.com/products')

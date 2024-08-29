@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Table, Button, Modal } from 'antd';
+import { Table, Button } from 'antd';
 import { CompareContext } from '../context/CompareContext';
 import AddMoreModal from './AddMoreModal';
 
